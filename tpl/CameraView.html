@@ -1,0 +1,35 @@
+<a href="#doc/Camera" class="btn pull-right" style="font-size: 13px;"><i class="icon-bookmark"></i>&nbsp;API</a>
+
+<div class="page-header">
+    <h1>navigator.camera</h1>
+</div>
+
+<form class="form-inline">
+    <label class="control-label" for="sourceType">Source:</label>&nbsp;
+    <select id="sourceType" style="width:180px">
+        <option value="0">Photo Library</option>
+        <option value="1" selected>Camera</option>
+        <option value="2">Saved Photo Album</option>
+    </select>
+    &nbsp;
+    <label class="control-label" for="quality">Quality:</label>&nbsp;
+    <select name="quality" id="quality" style="width:60px">
+        <option value="0">0</option>
+        <option value="25">25</option>
+        <option value="50" selected>50</option>
+        <option value="75">75</option>
+        <option value="100">100</option>
+    </select>
+    &nbsp;
+    <label class="control-label" for="encodingType">Encoding:</label>&nbsp;
+    <select id="encodingType" style="width:60px">
+        <option value="0" selected>JPG</option>
+        <option value="1">PNG</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <a href='#' class='btn btn-large getBtn'>getPicture( )</a>
+</form>
+
+<hr/>
+
+<img id="image" height="460"/>

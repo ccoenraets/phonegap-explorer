@@ -1,0 +1,44 @@
+<a href="#doc/Geolocation" class="btn pull-right" style="font-size: 13px;"><i class="icon-bookmark"></i>&nbsp;API</a>
+
+<div class="page-header">
+    <h1>navigator.geolocation</h1>
+</div>
+
+<a href='#' class='btn btn-large getBtn'>getCurrentPosition( )</a>
+<a href='#' class='btn btn-large watchBtn'>watchPosition( )</a>
+<a href='#' class='btn btn-large clearBtn'>clearWatch( )</a>
+
+<br/>
+<br/>
+
+<table class="table table-bordered table-striped">
+    <tr><td width="50%">Latitude</td><td id="latitude">n/a</td></tr>
+    <tr><td>Longitude</td><td id="longitude"></td></tr>
+    <tr><td>Altitude</td><td id="altitude"></td></tr>
+    <tr><td>Accuracy</td><td id="accuracy"></td></tr>
+    <tr><td>Altitude Accuracy</td><td id="altitudeAccuracy"></td></tr>
+    <tr><td>Heading</td><td id="heading"></td></tr>
+    <tr><td>Speed</td><td id="speed"></td></tr>
+    <tr><td>Timestamp</td><td id="timestamp"></td></tr>
+</table>
+
+<form class="form-horizontal">
+    <fieldset>
+        <legend>watch options</legend>
+        <div class="control-group">
+            <label class="control-label" for="watchFrequency">frequency:</label>
+            <div class="controls">
+                <select name="watchFrequency" id="watchFrequency">
+                  <option value="100">100</option>
+                  <option value="200">200</option>
+                  <option value="500">500</option>
+                  <option value="1000" selected>1000</option>
+                  <option value="2500">2500</option>
+                  <option value="5000">5000</option>
+                  <option value="10000">10000</option>
+                </select>
+                <p class="help-inline">milliseconds</p>
+            </div>
+        </div>
+    </fieldset>
+</form>

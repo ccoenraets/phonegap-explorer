@@ -1,0 +1,51 @@
+body,
+label,
+select,
+textarea,
+.btn,
+.control-group,
+.form-horizontal,
+.controls,
+.help-inline
+{
+  font-size: 16px;
+}
+.noshadow {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+    }
+
+legend {
+    font-size: 24px;
+}
+
+select {
+   -webkit-appearance: none;
+   padding-top: 0px;
+   padding-left: 6px;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   height: 3em;
+   width: 12em;
+}
+
+.capturedMedia {
+    display: none;
+}
+
+.rotate {
+-webkit-animation-name: cssAnimation;
+-webkit-animation-duration:3s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation {
+from {
+-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+}
+to {
+-webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+}
+}

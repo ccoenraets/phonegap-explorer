@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>PhonegAPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <!--<link href="css/prettify.css" type="text/css" rel="stylesheet" />-->
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header"></div>
+
+<div id="sampleList" class="scroll sidebar">
+    <ul class="tableview tableview-links"></ul>
+</div>
+
+<!--<img src="img/logo.png" width="100" style="position:absolute;bottom:10px;right: 10px;z-index: 1"/>-->
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div id="content" class="span12" style="padding-left:250px">
+            <!--<img src="img/logo.png">-->
+            <div style="padding: 250px 50px 50px 50px; text-align: center; color: #555555">
+                Select an API in the list to access the API's live documentation where you can experiment with the most
+                frequently used objects and functions.
+                Tap the API button in the upper right corner of the live documentation to access the API reference.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/cordova-1.7.0.js"></script>
+<script src="lib/jquery-1.7.2.min.js"></script>
+<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>
+<script src="lib/iscroll.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE&sensor=true"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/models/models.js"></script>
+<script src="js/views/header.js"></script>
+<script src="js/views/SampleListView.js"></script>
+<script src="js/views/GeolocationView.js"></script>
+<script src="js/views/GeolocationDocView.js"></script>
+<script src="js/views/AccelerometerView.js"></script>
+<script src="js/views/CameraView.js"></script>
+<script src="js/views/DeviceView.js"></script>
+<script src="js/views/CaptureView.js"></script>
+<script src="js/views/CompassView.js"></script>
+<script src="js/views/ConnectionView.js"></script>
+<script src="js/views/ContactView.js"></script>
+<script src="js/views/EventsView.js"></script>
+<script src="js/views/NotificationView.js"></script>
+<script src="js/views/DatabaseView.js"></script>
+<script src="js/views/FileView.js"></script>
+<script src="js/views/GoogleMapsView.js"></script>
+<script src="js/views/DocView.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

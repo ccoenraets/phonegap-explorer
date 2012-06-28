@@ -1,0 +1,22 @@
+<a href="#doc/Database" class="btn pull-right" style="font-size: 13px;"><i class="icon-bookmark"></i>&nbsp;API</a>
+
+<div class="page-header">
+    <h1>database</h1>
+</div>
+
+<p>SQL:</p>
+<textarea id="sql" style="width:98%;height:100px;">
+DROP TABLE IF EXISTS employee;
+CREATE TABLE employee (id integer primary key autoincrement, firstName, lastName);
+INSERT INTO employee (firstName, lastName) VALUES ("John", "Smith");
+INSERT INTO employee (firstName, lastName) VALUES ("Lisa", "Jones");
+</textarea>
+<a href='#' class='btn btn-large execBtn'>executeSQL( )</a>
+<a href='#' class='btn btn-large clearSQLBtn'>Clear</a>
+
+<br/>
+<br/>
+
+<p>Log:</p>
+<textarea id="log" style="width:98%;height:180px;"></textarea>
+<a href='#' class='btn btn-large clearLogBtn'>Clear Log</a>

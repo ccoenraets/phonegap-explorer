@@ -1,0 +1,56 @@
+<a href="#doc/Contact" class="btn pull-right" style="font-size: 13px;"><i class="icon-bookmark"></i>&nbsp;API</a>
+
+<div class="page-header">
+    <h1>navigator.contacts</h1>
+</div>
+
+<div id="contactWrapper" class="scroll" style="top:200px; left:270px; bottom: 20px; width:220px; border: solid 1px #E0E0E0;">
+    <ul id="contactList" class="tableview tableview-links"></ul>
+</div>
+
+
+<form class="form-horizontal">
+    <input id="contactSearchKey" type="text" class="input-medium search-query">
+    <button id="searchBtn" type="submit" class="btn btn-large">find( )</button>
+    <button id="addContactBtn" type="submit" class="btn btn-large">create( )</button>
+</form>
+
+<div class="row-fluid">
+    <span class="span4"></span>
+    <span class="span8">
+        <form class="form-horizontal" disabled>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <div class="control-group">
+                    <label class="control-label" for="firstName">First Name</label>
+                    <div class="controls">
+                        <input type="text" id="firstName">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="lastName">Last Name</label>
+                    <div class="controls">
+                        <input type="text" id="lastName">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="workPhone">Phone (work)</label>
+                    <div class="controls">
+                        <input type="text" id="workPhone">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="mobilePhone">Phone (mobile)</label>
+                    <div class="controls">
+                        <input type="text" id="mobilePhone">
+                    </div>
+                </div>
+            </fieldset>
+            <br/>
+            <div class="form-actions">
+                <a href="#" id="saveBtn" class="btn btn-large save">save( )</a>
+            </div>
+
+        </form>
+    </span>
+</div>
